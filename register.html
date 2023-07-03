@@ -1,0 +1,238 @@
+<!--Registration form-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Become a member</title>
+
+
+    <!-- Ion Icons Js -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <!-- JS -->
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+<!-- Menu -->
+<div class="menu">
+    <div class="container flex">
+        <!-- Mobile Button -->
+        <div class="mobile-btn">
+            <ion-icon name="grid"></ion-icon>
+        </div>
+        <div class="logo">
+            <img src="fitness-center-logo_25327-170-removebg-preview.png" alt="" />
+        </div>
+
+        <ul class="nav">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="plan&schedule.html">Plan</a></li>
+            <li class="nav-item"><a href="trainer.html">Trainers</a></li>
+            <li class="nav-item"><a href="homeworkout.html">Train at home</a></li>
+            <li class="nav-item"><a href="classes.html">Classes</a></li>
+            <li class="nav-item"><a href="nutrition.html">Nutrition</a></li>
+
+            
+            
+        </ul>
+
+        <a href="register.html" class="btn">Register</a>
+    </div>
+</div>
+<!-- End Menu -->
+
+
+
+<!--Register start-->
+
+<div id="register-form">
+    <div id="main">
+    <div class="h-tag">
+    <h2>Create Your Account</h2>
+    </div>
+    <!-- create account div -->
+    <div class="login">
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+    <tr>
+    <td align="right">Enter Name :</td>
+    <td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+    </tr>
+    <tr>
+    <td align="right">Enter Email ID :</td>
+    <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" /></td>
+    </tr>
+    <tr>
+    <td align="right">Enter Username :</td>
+    <td><input type="text" placeholder="Enter Username here" id="t3" class="tb" /></td>
+    </tr>
+    <tr>
+    <td align="right">Enter Password :</td>
+    <td><input type="password" placeholder="Enter Password here" id="t4" class="tb" /></td>
+    </tr>
+    <tr>
+    <td align="right">Enter Confirm Password :</td>
+    <td><input type="password" placeholder="Enter Password here" id="t5" class="tb" /></td>
+    </tr>
+    <br>
+    <br>
+
+
+    <tr>
+    <td align="right">Choose your gender :</td>
+    <td><label for="male">Male</label>
+        <input type="radio" name="gender" id="t6" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="t7" value="female"></td>
+    </tr>
+
+
+
+
+
+
+    <tr>
+    <td align="right">Choose your language :</td>
+    <td><label for="english">English</label>
+        <input type="checkbox" name="language" id="english" value="english" checked>
+        <label for="albanian">Albanian</label>
+        <input type="checkbox" name="language" id="albanian" value="albanian">
+        </td>
+    </tr>
+
+<!--Phone number field start -->
+    <form name="form1" action="#">
+    <tr>
+        <td align="right">Enter your phone number:</td>
+        <td>
+            <input type='text' id="t10" name='text1'/>
+            <input type="submit" name="submit" value="Check" onclick="phonenumber(document.form1.text1)"/>
+            </td>
+        </tr>
+    </form>
+<!--phone number field end-->    
+
+
+
+<!--upload file -->
+        <form action="/api" method="post" enctype="multipart/form-data">
+            
+          
+        <tr>
+            <td align="right">
+                <br>Upload your photo :</td>
+            <br>
+            <td>
+        
+                <br>
+            <input id="file" name="file" type="file" />
+            
+                </td>
+            </tr>
+        
+        
+        
+        </form>
+<!--Upload file-->       
+       
+
+    <tr>
+    <td></td>
+    <td>
+    
+    <br>
+
+    <input type="reset"  value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
+    <input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+    </tr>
+    </table>
+    </div>
+    <!-- create account box ending here.. -->
+    </div>
+</div>
+
+
+<!--Register ends-->
+
+
+<br><br><br>
+
+
+
+<!-- Footer -->
+
+
+    <!-- Footer Menu -->
+    <div class="menu">
+        <div class="container flex">
+            <!-- Mobile Button -->
+            <div class="mobile-btn">
+                <ion-icon name="grid"></ion-icon>
+            </div>
+
+
+
+        <!--nav of footer menu-->
+            
+        <ul class="nav">
+                <li class="nav-item-footer"><a href="contact.html">Contact us</a></li>
+                <li class="nav-item-footer"><a href="testimonial.html">Client reviews</a></li>
+                <li class="nav-item-footer"><a href="about.html">About us</a></li>
+                
+
+                
+                
+            
+        </ul>
+        
+        <!--nav of footer menu-->
+
+            
+
+
+        </div>
+    </div>
+    
+    <!--Footer Menu end-->
+
+    <footer class="footer">
+        <div class="container flex">
+            <p class="tertiary">
+                &copy; 2023 IE-English. All Rights Reserved.
+            </p>
+        </div>
+
+        <br><br>
+
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-logo.png" alt="black and white Facebook logo"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter-logo.png" alt="black and white Twitter logo"></a>
+        </div>
+
+    </footer>
+
+<!-- End Footer -->
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+
+</html>
+
+
+<!--Registration form end-->

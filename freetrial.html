@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Free trial</title>
+
+
+    <!-- Ion Icons Js -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <!-- JS -->
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+<!-- Menu -->
+<div class="menu">
+    <div class="container flex">
+        <!-- Mobile Button -->
+        <div class="mobile-btn">
+            <ion-icon name="grid"></ion-icon>
+        </div>
+        <div class="logo">
+            <img src="fitness-center-logo_25327-170-removebg-preview.png" alt="" />
+        </div>
+
+        <ul class="nav">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="plan&schedule.html">Plan</a></li>
+            <li class="nav-item"><a href="trainer.html">Trainers</a></li>
+            <li class="nav-item"><a href="homeworkout.html">Train at home</a></li>
+            <li class="nav-item"><a href="classes.html">Classes</a></li>
+            <li class="nav-item"><a href="nutrition.html">Nutrition</a></li>
+
+            
+            
+        </ul>
+
+        <a href="register.html" class="btn">Register</a>
+    </div>
+</div>
+<!-- End Menu -->
+
+
+
+
+<!--Free trial start-->
+
+<main>
+		
+    
+    
+    <div id="form">
+    
+        <h2>Complete the form below to begin your free trail.</h2>
+    
+    <form class="form-grid"> <!-- Start Form -->
+    
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="fName">First Name:</label> <br>
+            <input type="text" name="fName" id="fName" required><br><br>
+            
+            <label for="fName">Last Name:</label><br>
+            <input type="text" name="fName" id="lName" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Information</legend>
+            <p>I would like more information about:</p><br>
+            
+            <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Group Fitness">Group Fitness</label><br><br>
+            
+            <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Personal Training">Personal Training</label><br><br>
+            
+            <label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Nutrition">Nutrition</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Referral Source</legend>
+            <label for="reference">How did you find us?</label><br><br>
+            <select name="reference" id="reference">
+                <option value="ad">Advertisement</option>
+                <option value="friend">Friend</option>
+                <option value="google">Google</option>
+                <option value="social">Social Media</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="questions">Questions?</label><br>
+            <textarea id="questions" name="questions" rows="5" cols="35"></textarea><br>
+            
+            <label for="promo">Promo Code:</label><br>
+            <input type="text" id="promo" name="promo">
+        </fieldset>
+        
+        <input type="submit" id="submit" value="Submit" class="btn">
+        
+    </main>
+    <br><br>
+
+<!--Free trial end-->
+
+
+
+
+<!-- Footer -->
+
+
+    <!-- Menu -->
+    <div class="menu">
+        <div class="container flex">
+            <!-- Mobile Button -->
+            <div class="mobile-btn">
+                <ion-icon name="grid"></ion-icon>
+            </div>
+
+        
+            <ul class="nav">
+                <li class="nav-item-footer"><a href="contact.html">Contact us</a></li>
+                <li class="nav-item-footer"><a href="testimonial.html">Client reviews</a></li>
+                <li class="nav-item-footer"><a href="about.html">About us</a></li>
+                  
+            </ul>
+
+            
+        </div>
+    </div><br>
+    <br>
+
+
+
+<!--Footer Menu end-->
+
+<footer class="footer">
+    <div class="container flex">
+        <p class="tertiary">
+            &copy; 2023 IE-English. All Rights Reserved.
+        </p>
+    </div>
+
+    <br><br>
+
+    <div class="social">
+        <a href="https://www.facebook.com" target="_blank"><img src="facebook-logo.png" alt="black and white Facebook logo"></a>
+        <a href="https://twitter.com" target="_blank"><img src="twitter-logo.png" alt="black and white Twitter logo"></a>
+    </div>
+
+</footer>
+
+<!-- End Footer -->
+
+
+
+
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
